@@ -1,0 +1,23 @@
+[
+  {
+    "name": "test_character_1",
+    "films": [
+      "https://ghibliapi.herokuapp.com/films/1",
+      "https://ghibliapi.herokuapp.com/films/2",
+      "https://ghibliapi.herokuapp.com/films/3"
+    ]
+  },
+  {
+    "name": "test_character_2",
+    "films": [
+      "https://ghibliapi.herokuapp.com/films/1",
+      "https://ghibliapi.herokuapp.com/films/3"
+    ]
+  },
+  {
+    "name": "test_character_3",
+    "films": [
+      "https://ghibliapi.herokuapp.com/films/3"
+    ]
+  }
+]

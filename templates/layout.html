@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Movie List{% block title %}{% endblock %}</title>
+
+    <!-- Stylesheets -->
+
+    {% block styles %}
+
+    {% include "includes/stylesheets.html" %}
+
+    {% endblock %}
+
+    <!-- Scripts -->
+
+    {% block scripts %}
+
+    {% include "includes/scripts.html" %}
+
+    {% endblock %}
+
+</head>
+<body>
+
+    <!-- Main Container -->
+    <main id="container" class="container">
+
+    <!-- Content Block -->
+    {% block content %}{% endblock %}
+
+    </main>
+
+</body>
+</html>

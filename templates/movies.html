@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<h2>Movie List</h2>
+
+<!-- Movies Datatable -->
+<table class="table table-striped" id="movies">
+    <thead>
+    <tr>
+        <th>Name</th>
+        <th>Characters</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for movie in movies|sort(attribute='title') %}
+    <tr>
+        <td>{{ movie.title }}</td>
+        {% if movie.characters %}
+            <td>{{ movie.characters|join(', ') }}</td>
+        {% else %}
+            <td class="not-found">No characters information found in API for this movie</td>
+        {% endif %}
+    </tr>
+    {% endfor %}
+    </tbody>
+</table>
+
+{% endblock %}
